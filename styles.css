@@ -1,0 +1,82 @@
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
+
+#main-info {
+  height: 100vh; 
+}
+
+#bubbles {
+  height: 100vh;
+}
+
+.split {
+    height: 100vw;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color:rgb(73, 205, 252); 
+    font-family: 'Coda', cursive; 
+  }
+  
+  /* Control the right side */
+  .right {
+    position: absolute; 
+    right: 0;
+    top: 0;
+    width: 60vw;
+    height: 100vh;   
+    padding-left: 20px;
+    font-family: 'Coda', cursive; 
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+
+  .item {
+      border: 0.5em ridge rgb(73, 205, 252); 
+      border-radius: 10%;
+      padding: 1em; 
+      height: 20em;
+      width: 15em;
+      justify-content: center;
+      font-family: 'Coda', cursive; 
+  }
+
+  .brainhub {
+    text-align: center;
+  }
+
+
